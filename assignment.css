@@ -17,13 +17,13 @@
 }
 
 input[type="button"]{
-    font-size: large;
-    width:49%;
+    font-size:large;
+    min-width:49%;
 }
 
 input[type="text"]{
     font-size: large;
-    width:100%;
+    width:98%;
 }
 
 body{
@@ -32,4 +32,5 @@ body{
     padding:10px;
     margin:3px;
     width:400px;
+    text-align: center;
 }
