@@ -1,0 +1,12 @@
+.taskList{
+    background-color: bisque;
+}
+.task{
+    border:solid;
+    font-weight: bolder;
+    font-size: large;
+}
+
+input[type="button"]{
+    font-size: large;
+}

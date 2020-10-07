@@ -14,13 +14,18 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
     <!-- EXERCISE 1:
     Specify the title, the charset (UTF-8) and the viewport of the page.
     -->
+    <title>Personal Task List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="charset" content="UTF-8">
     <style>
       /* EXERCISE 2:  
-       Create a CSS class for the task list with a diverse background
-       Create a CSS class for the task list item with a border, a bold text and a bigger font size
-       Style every button of the page to be bigger
+       Create a CSS class for the task list with a diverse background   done
+       Create a CSS class for the task list item with a border, a bold text and a bigger font size  done
+       Style every button of the page to be bigger  done
     */
     </style>
+    <link rel="stylesheet" href="assignment.css"/>
+    <script type="text/javascript" src="assignment.js"></script>
   </head>
   <body>
     <h1>Welcome to your personal Task List!</h1>
@@ -33,20 +38,22 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
 
     <input type="text" id="newTask" />
     <input type="button" value="Add new Task" onclick="addNewTask()" />
+    <input type="button" value="Remove Last Task" onclick="removeLast()" />
+    <input type="button" value="Remove First Task" onclick="removeFirst()" />
 
-    <!-- EXERCISE 3
+    <!-- EXERCISE 3 done 
         Create a button "Remove Last Task" to trigger the method "removeLast"
         -->
 
-    <!-- EXERCISE 4
+    <!-- EXERCISE 4 done
         Create a button "Remove First Task" to trigger the method "removeFirst"
         -->
 
-    <ul id="myTaskList"></ul>
+    <ul id="myTaskList" class="taskList"></ul>
 
     <hr />
 
-    <input type="color" placeholder="Color" id="colorPicker" />
+    <input type="color" placeholder="Color" id="colorPicker" onchange="changeTaskBackgroundColor(value)"/>
     <input
       type="button"
       value="Change task background"
@@ -55,10 +62,10 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
 
     <hr />
 
-    <input type="button" value="Sort" onclick="bubblesort()" />
+    <input type="button" value="Sort" onclick="bubbleSort()" />
 
     <script>
-      /* EXERCISE 5: 
+      /* EXERCISE 5: done
                 Add a new task to the list.
                 Suggestion:
                 - Use document.getElementById to get the UL item and the input text
@@ -66,19 +73,19 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
                 - Append the child to the UL
             */
 
-      /* EXERCISE 6: 
+      /* EXERCISE 6: done
                 Create a method "removeLast" which removes the last item from the task list
             */
 
-      /* EXERCISE 7: 
+      /* EXERCISE 7: done
                 Create a method "removeFirst" which removes the first item from the task list
             */
 
-      /* EXERCISE 8: 
+      /* EXERCISE 8: done
                Create a method "getTasksAsArray" which returns (and print to the console) an array containing the tasks as string
             */
 
-      /* EXERCISE 9:
+      /* EXERCISE 9: 
                Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
                onchange event listener ad applies it as background to every list item
             */
