@@ -1,10 +1,16 @@
 .taskList{
     background-color: bisque;
+    margin:3px;
+    padding:3px;
 }
 .task{
+    padding: 3px;
     border:solid;
     font-weight: bolder;
     font-size: large;
+    border-radius: 5px;
+    margin:3px;
+    border-color:rgb(114, 89, 58);
 }
 
 input[type="button"]{
